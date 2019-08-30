@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
+	<body>
+		<p> Hello, please choose your album </p>
+            
+		
+
+		{% for album_name in album_list %}
+			
+			<a href="index?album={{ album_name }}">{{ album_name }}</a></br>
+
+		{% endfor %}
+            
+	</body>
+</html>
